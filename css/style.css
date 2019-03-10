@@ -1,0 +1,246 @@
+@import url("css/normalize.css");
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Bold.ttf);
+    src: url(font/Roboto-Italic.ttf);
+    src: url(font/Roboto-Light.ttf);
+    src: url(font/Roboto-Regular.ttf);
+}
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix::after, .header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.page{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #444;
+    line-height: 1.375;
+    font-size: 1rem;
+    margin: 0;
+}
+.page__sell{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header{
+    padding: 1.8rem 0;
+    border-bottom: 1px solid #ccc;
+}
+.phone_number, .email_address{
+    text-decoration: none;
+}
+.phone_number{
+    font-weight: bold;
+    color: #000;
+    font-size: 1.5625rem;
+}
+.email_address{
+    color: #8a8a8a;
+}
+.header__logo{
+    float: left;
+}
+.header__contact{
+    float: right;
+    text-align: right;
+}
+.nav{
+    padding: 1.325rem;
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.link{
+    text-decoration: underline;
+    color: #9a9a9a;
+}
+.link:hover{
+    color:#f44336;
+    transition: 0.5s;
+}
+.nav__link{
+    text-decoration: none;
+    font-size: 1.1875rem;
+    color:#444;
+}
+.slider__item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider .owl-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.5rem;
+    text-align: center;
+
+}
+.slider .owl-dots .owl-dot:hover span{
+    background: #000;
+    border: #000;
+}
+.slider .owl-dots .active span{
+    background: #000 !important;
+    border: #000 !important;
+}
+.slider .owl-dots .owl-dot span{
+    display: block;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.4rem;
+}
+.owl-carousel button.owl-dot {
+    outline: none;
+}
+.section__headline{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: normal;
+    color: #000;
+    margin: 2rem 0;
+}
+.grid__item{
+    float: left;
+    margin-right: 1.7%;
+    margin-bottom: 1.7%;
+    width: 49.15%;
+    position: relative;
+}
+.grid__item:nth-of-type(2n){
+    margin-right: 0;
+}
+.grid__warp{
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    background:rgba(0, 0, 0, 0.5);
+}
+.grid__warp:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+.grid__picture{
+    display: block;
+    max-width: 100%;
+}
+.grid__link{
+   color:#f4f4f4;
+    text-align: center;
+    font-size: 1.8125rem;
+}
+.grid__text{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.icon__circle{
+    display: inline-block;
+    width: 6.25rem;
+    height: 6.25rem;
+    background: #ffb9b3;
+    border-radius: 50%;
+}
+.advantage__item{
+    text-align: center;
+}
+.icon__circle_picture{
+    max-width: 100%;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.advantage{
+    display: flex;
+    flex-direction: row;
+}
+.advantage__item{
+    width: 28%;
+    margin-right: 8%;
+}
+.advantage__item:last-child{
+    margin-right: 0;
+}
+.advantage__headline{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0.8rem 0;
+}
+.page__row_footer{
+    background: #595959;
+    color: #fff;
+    text-align: right;
+    font-size: 1rem;
+    margin-top: 4rem ;
+}
+.footer__link{
+    color: #fff;
+    text-decoration: none;
+}
+.footer{
+    padding: 1.2rem 0;
+}
+.button-nav{
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    text-align: right;
+    outline: none;
+    display: none;
+}
+.button_nav__line{
+    padding: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: 4px 0;
+}
+#back-top {
+    position: fixed;
+    bottom: 43px;
+    right: 0;
+    margin-right: 25px;
+}
+#back-top a:hover {
+    background-color: #ffb9b3;
+    color: rgba(0,0,0,0.5); ;
+}
+#back-top a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 45px;
+    line-height: 34px;
+}
